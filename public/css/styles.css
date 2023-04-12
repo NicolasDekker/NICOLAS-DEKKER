@@ -213,14 +213,23 @@ main section article i:hover{
     transition: 1s;
 }
 
-footer div h4{
+footer div h5{
     color: gray;
+    margin-top: 15px;
 }
 
 footer section{
     text-align: center;
     margin-top: 20px;
-}
+    /* font-size: smaller; */
+    
+} 
+
+/* footer{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 200px;
+} */
 
 footer section i{
     color: blue;
@@ -229,6 +238,7 @@ footer section i{
 
 footer section i:hover{
     box-shadow: 0px 0px 10px rgb(141, 140, 140);
+    
 }
 
 .img-banner{
@@ -277,23 +287,62 @@ footer section i:hover{
     }
 
 
-.burguer-menu{
-    display: none;
+    .burguer-menu{
+        display: none;
+    }
+
+    .guardar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .guardar ul{
+        display: flex;
+    }
+
+    .guardar li{
+        margin:5px;
+    }
+
+    /* footer{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 200px;
+
+    }
+
+    footer section{
+        flex-direction: column;
+    }
+
+    footer div section h4{
+        display: flex;
+        align-self: flex-end;
+        flex-direction: column;
+    } */
+    footer {
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    
+    }
+
+    footer section {
+        width: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    footer h5 {
+        width: 100%;
+        font-size: larger;
+        margin-top: 2px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
 }
 
-.guardar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.guardar ul{
-    display: flex;
-}
-
-.guardar li{
-    margin:5px;
-}
-}
 
 @media (min-width:1200px){
 
@@ -351,10 +400,16 @@ footer section i:hover{
     .guardar a{
         font-size: 19px;
     }
+
+
 }
 
 
 /* register*/
+.login-form{
+    height: 45%;
+    margin-top: 110px;
+}
 
 .usuario-file{
     display: flex;
